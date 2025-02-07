@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB5E01B83CB63AB6A11C041F /* Pods_ProjectA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E68C031C9945A381B884D /* Pods_ProjectA.framework */; };
+		B44F4378996E20B0AA40DB18 /* Pods_ProjectA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71E0F6A4738FDDCD66150F4 /* Pods_ProjectA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		567E68C031C9945A381B884D /* Pods_ProjectA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		985C86E02B2326773A7D7F78 /* Pods-ProjectA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectA.release.xcconfig"; path = "Target Support Files/Pods-ProjectA/Pods-ProjectA.release.xcconfig"; sourceTree = "<group>"; };
-		C50B20782D4F9036000CAE44 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = SOURCE_ROOT; };
+		11CC940DB812043A81FCA006 /* Pods-ProjectA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectA.debug.xcconfig"; path = "Target Support Files/Pods-ProjectA/Pods-ProjectA.debug.xcconfig"; sourceTree = "<group>"; };
+		68DE34167E67703BA8A9ED3B /* Pods-ProjectA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectA.release.xcconfig"; path = "Target Support Files/Pods-ProjectA/Pods-ProjectA.release.xcconfig"; sourceTree = "<group>"; };
 		C57D92262D4F830D009EC6C7 /* ProjectA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectA.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1D0B78A761F39090FD339B7 /* Pods-ProjectA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectA.debug.xcconfig"; path = "Target Support Files/Pods-ProjectA/Pods-ProjectA.debug.xcconfig"; sourceTree = "<group>"; };
+		C5B57EDF2D557D000035BF57 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../SharedFolder/Constants.h; sourceTree = SOURCE_ROOT; };
+		E71E0F6A4738FDDCD66150F4 /* Pods_ProjectA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -44,38 +44,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5E01B83CB63AB6A11C041F /* Pods_ProjectA.framework in Frameworks */,
+				B44F4378996E20B0AA40DB18 /* Pods_ProjectA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19F25ADDE293FE4D819D835A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E71E0F6A4738FDDCD66150F4 /* Pods_ProjectA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B0A9AE1542553FE8EE5ED43 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D1D0B78A761F39090FD339B7 /* Pods-ProjectA.debug.xcconfig */,
-				985C86E02B2326773A7D7F78 /* Pods-ProjectA.release.xcconfig */,
+				11CC940DB812043A81FCA006 /* Pods-ProjectA.debug.xcconfig */,
+				68DE34167E67703BA8A9ED3B /* Pods-ProjectA.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		596DB5FF571303EDF150C493 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				567E68C031C9945A381B884D /* Pods_ProjectA.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C57D921D2D4F830D009EC6C7 = {
 			isa = PBXGroup;
 			children = (
-				C50B20782D4F9036000CAE44 /* Constants.h */,
+				C5B57EDF2D557D000035BF57 /* Constants.h */,
 				C57D92282D4F830D009EC6C7 /* ProjectA */,
 				C57D92272D4F830D009EC6C7 /* Products */,
 				3B0A9AE1542553FE8EE5ED43 /* Pods */,
-				596DB5FF571303EDF150C493 /* Frameworks */,
+				19F25ADDE293FE4D819D835A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,12 +94,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C57D923E2D4F830F009EC6C7 /* Build configuration list for PBXNativeTarget "ProjectA" */;
 			buildPhases = (
-				B46ED7DE4475068758137A37 /* [CP] Check Pods Manifest.lock */,
+				42E81C3335A50A952CD0B6B4 /* [CP] Check Pods Manifest.lock */,
 				C57D92222D4F830D009EC6C7 /* Sources */,
 				C57D92232D4F830D009EC6C7 /* Frameworks */,
 				C57D92242D4F830D009EC6C7 /* Resources */,
-				70A7B1C6750EBB7FA2FD5638 /* [CP] Embed Pods Frameworks */,
-				376E2C14C24D7B7ACA5C65A4 /* [CP] Copy Pods Resources */,
+				7E895DE8C82F54D4C7B7C523 /* [CP] Embed Pods Frameworks */,
+				6CAC41C4D4E9A20706FFA373 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,41 +157,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		376E2C14C24D7B7ACA5C65A4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		70A7B1C6750EBB7FA2FD5638 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B46ED7DE4475068758137A37 /* [CP] Check Pods Manifest.lock */ = {
+		42E81C3335A50A952CD0B6B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -213,6 +179,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6CAC41C4D4E9A20706FFA373 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E895DE8C82F54D4C7B7C523 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectA/Pods-ProjectA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -228,15 +228,64 @@
 /* Begin XCBuildConfiguration section */
 		C57D923F2D4F830F009EC6C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1D0B78A761F39090FD339B7 /* Pods-ProjectA.debug.xcconfig */;
+			baseConfigurationReference = 11CC940DB812043A81FCA006 /* Pods-ProjectA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RCM82X5MZ7;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilitiesComponents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ProjectB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/MLImage/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitCommon/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitTextRecognition/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitTextRecognitionCommon/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitVision/Frameworks\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/FirebaseAnalytics/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/WithoutAdIdSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ProjectC\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSCore/AWSCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilitiesComponents/GoogleUtilitiesComponents.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ProjectB/ProjectB.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMLKit\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"$(inherited)",
+					"${PODS_ROOT}/GoogleMLKit/MLKitCore/Sources",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ProjectC/ProjectC.xcframework/Headers\"",
+				);
 				INFOPLIST_FILE = ProjectA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -258,15 +307,64 @@
 		};
 		C57D92402D4F830F009EC6C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 985C86E02B2326773A7D7F78 /* Pods-ProjectA.release.xcconfig */;
+			baseConfigurationReference = 68DE34167E67703BA8A9ED3B /* Pods-ProjectA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RCM82X5MZ7;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilitiesComponents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ProjectB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/MLImage/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitCommon/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitTextRecognition/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitTextRecognitionCommon/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitVision/Frameworks\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/FirebaseAnalytics/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/WithoutAdIdSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ProjectC\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSCore/AWSCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilitiesComponents/GoogleUtilitiesComponents.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ProjectB/ProjectB.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMLKit\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"$(inherited)",
+					"${PODS_ROOT}/GoogleMLKit/MLKitCore/Sources",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ProjectC/ProjectC.xcframework/Headers\"",
+				);
 				INFOPLIST_FILE = ProjectA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

@@ -12,6 +12,9 @@
 
 @interface ViewController ()
 
+@property(nonatomic, strong) IBOutlet UILabel* bTextLabel;
+@property(nonatomic, strong) IBOutlet UILabel* cTextLabel;
+
 @end
 
 @implementation ViewController
@@ -20,12 +23,15 @@
     [super viewDidLoad];
     
     NSLog(@"Project A Running");
+    self.view.backgroundColor = UIColor.redColor;
     
     BLogger* bLogger = [BLogger new];
     [bLogger functionB];
     
     CLogger* cLogger = [CLogger new];
     [cLogger functionC];
+    
+    self.cTextLabel.text = [cLogger getURLConstantText];
 }
 
 

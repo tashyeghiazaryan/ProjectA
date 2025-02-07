@@ -5,7 +5,9 @@ target 'ProjectA' do
   pod 'Firebase/Core'
   pod 'AWSCore', '~> 2.10.0'
   pod 'ProjectB', :path => '../ProjectB'
-  pod 'ProjectC', :git => 'https://github.com/tashyeghiazaryan/ProjectC.git', :branch => 'main'
+#  pod 'ProjectC', :git => 'https://github.com/tashyeghiazaryan/ProjectC.git', :branch => 'main'
+  pod 'ProjectC', :git => 'git@github.com:tashyeghiazaryan/ProjectC_lib.git', :tag => '1.0.1'
+
   
   pod 'GoogleMLKit/TextRecognition'
 
