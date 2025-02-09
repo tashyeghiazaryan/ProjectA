@@ -1,23 +1,23 @@
-# How to Link AProject, B, and C
+# change 
 
-## AProject Structure
+## ProjectA Structure
 
-- **A** - Workspace
-- **B** - Local linked framework
-- **C** - Remote linked framework installed via CocoaPods
+- **ProjectA** - Workspace
+- **ProjectB** - Local linked framework
+- **ProjectC** - Remote linked framework installed via CocoaPods
 
 ## Linking Steps
 
 1. **Linking ProjectB (Local Framework)**
 
-   - In `A`'s Podfile, specify the local path for ProjectB:
+   - In `ProjectA`'s Podfile, specify the local path for ProjectB:
      ```ruby
      pod 'ProjectB', :path => '../ProjectB'
      ```
 
 2. **Linking ProjectC (Remote Framework)**
 
-   - Add the following line to `A`'s Podfile:
+   - Add the following line to `ProjectA`'s Podfile:
      ```ruby
      pod 'ProjectC', :git => 'git@github.com:tashyeghiazaryan/ProjectC.git', :tag => '1.0.3'
      ```
@@ -73,7 +73,7 @@
 
 6. **Update ProjectA’s Podfile**
 
-   - In `A`’s Podfile, update the tag version for ProjectC:
+   - In `ProjectA`’s Podfile, update the tag version for ProjectC:
      ```ruby
      pod 'ProjectC', :git => 'git@github.com:tashyeghiazaryan/ProjectC.git', :tag => '1.0.2'
      ```
